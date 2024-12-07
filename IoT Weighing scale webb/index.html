@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IoT Weighing Scale that tracks weight and converts it into currency.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Weighing Scale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>IoT Weighing Scale</h1>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</header>
+
+<div class="container">
+    <div id="weight-display">
+        Current Weight: <span id="currentWeight">Loading...</span> kg
+    </div>
+
+    <div id="log-container">
+        <h2>Activity Log</h2>
+        <p id="log"></p>
+    </div>
+
+    <div class="charts">
+        <h2>Weight History</h2>
+        <canvas id="weightChart"></canvas>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/notyf@3.10.0/dist/notyf.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
